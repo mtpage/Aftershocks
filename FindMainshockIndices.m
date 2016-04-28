@@ -1,14 +1,14 @@
 function mainshockIndices = FindMainshockIndices(catalog,minMainshockMag,maxMainshockMag,maxDepth,exclusionDistance,exclusionTimeBefore,exclusionTimeAfter,excludeDistanceFormat,excludeEarlyCatalog,excludeLateCatalog)
 %FINDMAINSHOCKINDICES        Find indices of mainshocks using given exclusion criteria
 %        MAINSHOCKINDICES = FINDMAINSHOCKINDICES(CATALOG,MINMAINSHOCKMAG,
-%        MAXMAINSHOCKMAG,MAXDEPTH,EXCLUDEDISTANCE,EXCLUSIONTIMEBEFORE,
+%        MAXMAINSHOCKMAG,MAXDEPTH,EXCLUSIONDISTANCE,EXCLUSIONTIMEBEFORE,
 %        EXCLUSIONTIMEAFTER,EXCLUDEDISTANCEFORMAT,EXCLUDEEARLYCATALOG, 
 %        EXCLUDELATECATLOG)
 %        Returns the row indices of mainshocks within CATALOG.
 %        Mainshocks are earthquakes within the magnitude range
 %        [MINMAINSHOCKMAG MAXMAINSHOCKMAG] and above MAXDEPTH km
-%        for which there are no larger earthquakes within the EXCLUDEDISTANCE
-%        for EXCLUDETIMEBEFORE days prior and EXCLUDETIMEAFTER days after.
+%        for which there are no larger earthquakes within the EXCLUSIONDISTANCE
+%        for EXCLUSIONTIMEBEFORE days prior and EXCLUSIONTIMEAFTER days after.
 %
 %        CATALOG is the earthquake catalog entered in standard
 %        10-column format.  The columns are:
